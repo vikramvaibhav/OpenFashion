@@ -21,7 +21,7 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'OpenFashion' do
+abstract_target 'OpenFashionCommonPods' do
   config = use_native_modules!
 
   # Flags change depending on the env values.
@@ -42,7 +42,18 @@ target 'OpenFashion' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
-
+  target 'OpenFashionDev' do
+    inherit! :complete
+    # Pods for testing
+  end
+  target 'OpenFashionStage' do
+    inherit! :complete
+    # Pods for testing
+  end
+  target 'OpenFashion' do
+    inherit! :complete
+    # Pods for testing
+  end
   target 'OpenFashionTests' do
     inherit! :complete
     # Pods for testing

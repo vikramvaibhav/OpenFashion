@@ -3,15 +3,24 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "android": "react-native run-android --variant=developmentdebug",
+    "android:staging": "react-native run-android --variant=stagingdebug",
+    "android:staging-release": "react-native run-android --variant=stagingrelease",
+    "android:dev": "react-native run-android --variant=developmentdebug",
+    "android:dev-release": "react-native run-android --variant=developmentrelease",
+    "android:prod": "react-native run-android --variant=productiondebug",
+    "android:prod-release": "react-native run-android --variant=productionrelease",
+    "ios": "react-native run-ios --simulator='iPhone 13' --scheme 'OpenFashionDev'",
+    "ios:stage": "react-native run-ios --simulator='iPhone 13' --scheme 'OpenFashionStage'",
+    "ios:prod": "react-native run-ios --simulator='iPhone 13' --scheme 'OpenFashion'",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.71.8"
+    "react-native": "0.71.8",
+    "react-native-config": "^1.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
