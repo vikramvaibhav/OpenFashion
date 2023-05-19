@@ -52,18 +52,28 @@ react {
     // hermesFlags = ["-O", "-output-source-map"]
 }
 
+project.ext.envConfigFiles = [
+   productiondebug: ".env.production",
+   productionrelease: ".env.production",
+   developmentrelease: ".env.development",
+   developmentdebug: ".env.development",
+   stagingrelease: ".env.staging",
+   stagingdebug: ".env.staging"
+]
+
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 /**
  * Set this to true to create four separate APKs instead of one,
  * one for each native architecture. This is useful if you don't
  * use App Bundles (https://developer.android.com/guide/app-bundle/)
  * and want to have separate APKs to upload to the Play Store.
  */
-def enableSeparateBuildPerCPUArchitecture = false
+def enableSeparateBuildPerCPUArchitecture = true
 
 /**
  * Set this to true to Run Proguard on Release builds to minify the Java bytecode.
  */
-def enableProguardInReleaseBuilds = false
+def enableProguardInReleaseBuilds = true
 
 /**
  * The preferred build flavor of JavaScriptCore (JSC)
@@ -87,7 +97,8 @@ def reactNativeArchitectures() {
     def value = project.getProperties().get("reactNativeArchitectures")
     return value ? value.split(",") : ["armeabi-v7a", "x86", "x86_64", "arm64-v8a"]
 }
-
+def VERSION_CODE = project.env.get("VERSION_CODE").toInteger()
+def VERSION_NAME = project.env.get("VERSION_NAME")
 android {
     ndkVersion rootProject.ext.ndkVersion
 
@@ -98,8 +109,8 @@ android {
         applicationId "com.openfashion"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode VERSION_CODE
+        versionName VERSION_NAME
     }
 
     splits {
@@ -117,17 +128,49 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file('openfashion.keystore')
+            storePassword 'openfashion'
+            keyAlias 'openfashion'
+            keyPassword 'openfashion'
+        }
     }
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            matchingFallbacks = ['debug', 'release']
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
-            signingConfig signingConfigs.debug
+            debuggable true
+            matchingFallbacks = ['release']
+            signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
+            shrinkResources true
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+
+    flavorDimensions "version"
+    productFlavors {
+        production {
+            applicationId "com.openfashion"
+            dimension "version"
+            signingConfig signingConfigs.release
+            resValue "string", "build_config_package", "com.openfashion"
+        }
+        staging {
+            applicationId "com.openfashion.staging"
+            dimension "version"
+            signingConfig signingConfigs.release
+            resValue "string", "build_config_package", "com.openfashion.staging"
+        }
+        development {
+            applicationId "com.openfashion.development"
+            dimension "version"
+            signingConfig signingConfigs.release
+            resValue "string", "build_config_package", "com.openfashion.development"
         }
     }
 
