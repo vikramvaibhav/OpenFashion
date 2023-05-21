@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* OpenFashionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* OpenFashionTests.m */; };
+		013E518138CF48E58D38B9A3 /* TenorSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB13F90D2FDE4059B43BBE5F /* TenorSans-Regular.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1CCA1703F1054371A0CA93FE /* BodoniModa_28pt-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A08ACEF27B74A45A7729131 /* BodoniModa_28pt-Italic.ttf */; };
 		389AD5B56D0ED0377B0C1D7C /* libPods-OpenFashionCommonPods-OpenFashionDev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6372501CAE3D481E34ED30E1 /* libPods-OpenFashionCommonPods-OpenFashionDev.a */; };
 		43500AC7D61CC5190D1A7C73 /* libPods-OpenFashionCommonPods-OpenFashion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3185A7EB57D6EC6A525A5C6B /* libPods-OpenFashionCommonPods-OpenFashion.a */; };
 		6BBE97F0185CB9DF83A24BDD /* libPods-OpenFashionCommonPods-OpenFashionStage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A127FE1F8837AA0FD140BF23 /* libPods-OpenFashionCommonPods-OpenFashionStage.a */; };
@@ -23,6 +25,8 @@
 		8CD204372A1721AA00D76D7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		8CD2043B2A1721AA00D76D7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8CD2043C2A1721AA00D76D7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		8CE4EC8A2A194DD100CA74E0 /* BodoniModa_28pt-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A08ACEF27B74A45A7729131 /* BodoniModa_28pt-Italic.ttf */; };
+		8CE4EC8B2A194DD100CA74E0 /* TenorSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB13F90D2FDE4059B43BBE5F /* TenorSans-Regular.ttf */; };
 		BB3C7E83557EC74921A9C474 /* libPods-OpenFashionCommonPods-OpenFashionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC108843B161D9CE60EE959 /* libPods-OpenFashionCommonPods-OpenFashionTests.a */; };
 /* End PBXBuildFile section */
 
@@ -62,11 +66,13 @@
 		8CD204312A1721A700D76D7F /* OpenFashion dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OpenFashion dev-Info.plist"; path = "/Users/vikramvaibhav/Documents/react-native/OpenFashion/ios/OpenFashion dev-Info.plist"; sourceTree = "<absolute>"; };
 		8CD204432A1721AA00D76D7F /* OpenFashionStage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenFashionStage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD204442A1721AA00D76D7F /* OpenFashion stage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OpenFashion stage-Info.plist"; path = "/Users/vikramvaibhav/Documents/react-native/OpenFashion/ios/OpenFashion stage-Info.plist"; sourceTree = "<absolute>"; };
+		9A08ACEF27B74A45A7729131 /* BodoniModa_28pt-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BodoniModa_28pt-Italic.ttf"; path = "../src/assets/fonts/BodoniModa_28pt-Italic.ttf"; sourceTree = "<group>"; };
 		A127FE1F8837AA0FD140BF23 /* libPods-OpenFashionCommonPods-OpenFashionStage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenFashionCommonPods-OpenFashionStage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45E676A2B92138913BA6D3A /* Pods-OpenFashionCommonPods-OpenFashionStage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFashionCommonPods-OpenFashionStage.debug.xcconfig"; path = "Target Support Files/Pods-OpenFashionCommonPods-OpenFashionStage/Pods-OpenFashionCommonPods-OpenFashionStage.debug.xcconfig"; sourceTree = "<group>"; };
 		BA2E5EDEFF3A8DBE826E00C9 /* Pods-OpenFashionCommonPods-OpenFashionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFashionCommonPods-OpenFashionTests.release.xcconfig"; path = "Target Support Files/Pods-OpenFashionCommonPods-OpenFashionTests/Pods-OpenFashionCommonPods-OpenFashionTests.release.xcconfig"; sourceTree = "<group>"; };
 		BEC108843B161D9CE60EE959 /* libPods-OpenFashionCommonPods-OpenFashionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenFashionCommonPods-OpenFashionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CBE7671E797E0A6A51890A /* Pods-OpenFashionCommonPods-OpenFashionDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFashionCommonPods-OpenFashionDev.debug.xcconfig"; path = "Target Support Files/Pods-OpenFashionCommonPods-OpenFashionDev/Pods-OpenFashionCommonPods-OpenFashionDev.debug.xcconfig"; sourceTree = "<group>"; };
+		EB13F90D2FDE4059B43BBE5F /* TenorSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TenorSans-Regular.ttf"; path = "../src/assets/fonts/TenorSans-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -148,6 +154,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		711F9874C64A46FA981CC855 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A08ACEF27B74A45A7729131 /* BodoniModa_28pt-Italic.ttf */,
+				EB13F90D2FDE4059B43BBE5F /* TenorSans-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +181,7 @@
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
 				8CD204312A1721A700D76D7F /* OpenFashion dev-Info.plist */,
 				8CD204442A1721AA00D76D7F /* OpenFashion stage-Info.plist */,
+				711F9874C64A46FA981CC855 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -344,6 +360,8 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				1CCA1703F1054371A0CA93FE /* BodoniModa_28pt-Italic.ttf in Resources */,
+				013E518138CF48E58D38B9A3 /* TenorSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +378,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CE4EC8A2A194DD100CA74E0 /* BodoniModa_28pt-Italic.ttf in Resources */,
+				8CE4EC8B2A194DD100CA74E0 /* TenorSans-Regular.ttf in Resources */,
 				8CD2043B2A1721AA00D76D7F /* LaunchScreen.storyboard in Resources */,
 				8CD2043C2A1721AA00D76D7F /* Images.xcassets in Resources */,
 			);

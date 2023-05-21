@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/BodoniModa_28pt-Italic.ttf",
+      "sha1": "cf32b80c4624256322c2ce5269cb756a258ae94c"
+    },
+    {
+      "path": "src/assets/fonts/TenorSans-Regular.ttf",
+      "sha1": "9e8b5d8350c5310fed548e56baab4900f651ad6d"
+    }
+  ]
+}

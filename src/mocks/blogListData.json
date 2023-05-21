@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "image": "https://picsum.photos/200/300",
+    "title": "Neque porro quisquam est qui dolorem ipsum quia",
+    "shortSescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "blogInfo": "5 days ago"
+  },
+  {
+    "id": 2,
+    "image": "https://picsum.photos/200/300",
+    "title": "Neque porro quisquam est qui dolorem ipsum quia",
+    "shortSescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "blogInfo": "3 days ago"
+  },
+  {
+    "id": 3,
+    "image": "https://picsum.photos/200/300",
+    "title": "Neque porro quisquam est qui dolorem ipsum quia",
+    "shortSescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "blogInfo": "5 days ago"
+  },
+  {
+    "id": 4,
+    "image": "https://picsum.photos/200/300",
+    "title": "Neque porro quisquam est qui dolorem ipsum quia",
+    "shortSescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "blogInfo": "9 days ago"
+  },
+  {
+    "id": 5,
+    "image": "https://picsum.photos/200/300",
+    "title": "Neque porro quisquam est qui dolorem ipsum quia",
+    "shortSescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "blogInfo": "5 days ago"
+  },
+  {
+    "id": 6,
+    "image": "https://picsum.photos/200/300",
+    "title": "Neque porro quisquam est qui dolorem ipsum quia",
+    "shortSescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "blogInfo": "15 days ago"
+  }
+]

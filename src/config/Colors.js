@@ -1,0 +1,16 @@
+export default {
+  background: '#F8F0E7',
+  body: '#333333',
+  inputBackground: '#F9F9F9',
+  label: '#555555',
+  line: '#E0CFBA',
+  offWhite: '#FCFCFC',
+  placeholder: '#888888',
+  primary: '#A8715A',
+  secondary: '#DD8560',
+  titleActive: '#000000',
+  rightsBackground: '#C4C4C4',
+  aboutBackground: '#F2F2F2',
+  border: '#DEDEDE',
+  white: '#FFFFFF',
+};
