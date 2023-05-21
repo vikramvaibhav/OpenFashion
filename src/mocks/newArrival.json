@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "image": "https://picsum.photos/165/200",
+      "title": "Neque porro quisquam est qui dolorem ipsum quia",
+      "price": "$200"
+    },
+    {
+      "id": 2,
+      "image": "https://picsum.photos/165/200",
+      "title": "Neque porro quisquam est qui dolorem ipsum quia",
+      "price": "$120"
+    },
+    {
+      "id": 3,
+      "image": "https://picsum.photos/165/200",
+      "title": "Neque porro quisquam est qui dolorem ipsum quia",
+      "price": "$100"
+    },
+    {
+      "id": 4,
+      "image": "https://picsum.photos/165/200",
+      "title": "Neque porro quisquam est qui dolorem ipsum quia",
+      "price": "$120"
+    },
+    {
+      "id": 5,
+      "image": "https://picsum.photos/165/200",
+      "title": "Neque porro quisquam est qui dolorem ipsum quia",
+      "price": "$189"
+    },
+    {
+      "id": 6,
+      "image": "https://picsum.photos/165/200",
+      "title": "Neque porro quisquam est qui dolorem ipsum quia",
+      "price": "$190"
+    }
+  ]

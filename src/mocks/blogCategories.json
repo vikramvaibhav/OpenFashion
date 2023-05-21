@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "category": "Fashion"
+    },
+    {
+      "id": 2,
+      "category": "Promo"
+    },
+    {
+      "id": 3,
+      "category": "Policy"
+    },
+    {
+      "id": 4,
+      "category": "Lookbook"
+    },
+    {
+      "id": 5,
+      "category": "Sale"
+    }
+  ]
