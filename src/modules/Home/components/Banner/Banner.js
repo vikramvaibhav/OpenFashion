@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import { ImageBackground, StyleSheet, View } from 'react-native';
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
 
@@ -25,7 +25,7 @@ const Banner = () => {
   );
 };
 
-export default memo(Banner);
+export default Banner;
 
 const styles = StyleSheet.create({
   backgroundImage: {

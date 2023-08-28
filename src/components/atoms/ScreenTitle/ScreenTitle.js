@@ -1,8 +1,8 @@
+import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import React, { lazy, memo } from 'react';
 
-const AppText = lazy(() => import('../AppText'));
-const Divider = lazy(() => import('../Divider'));
+import AppText from '../AppText';
+import Divider from '../Divider';
 
 const ScreenTitle = ({ children, style, titleStyle, divider = true }) => {
   return (
@@ -13,7 +13,7 @@ const ScreenTitle = ({ children, style, titleStyle, divider = true }) => {
   );
 };
 
-export default memo(ScreenTitle);
+export default ScreenTitle;
 
 const styles = StyleSheet.create({
   container: {

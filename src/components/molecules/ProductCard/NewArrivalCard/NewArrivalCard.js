@@ -1,11 +1,10 @@
 import { View, Image, StyleSheet } from 'react-native';
-import React, { lazy, memo } from 'react';
+import React from 'react';
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
-
-const AppText = lazy(() => import('../../../atoms/AppText'));
 
 import typography from '../../../../config/Typography';
 import colors from '../../../../config/Colors';
+import { AppText } from '../../../atoms';
 
 const NewArrivalCard = ({ style }) => {
     return (
@@ -23,7 +22,7 @@ const NewArrivalCard = ({ style }) => {
     );
 };
 
-export default memo(NewArrivalCard);
+export default NewArrivalCard;
 
 const styles = StyleSheet.create({
     container: {

@@ -1,5 +1,5 @@
 import { View, StyleSheet } from 'react-native';
-import React, { memo } from 'react';
+import React from 'react';
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
 
 import typography from '../../../../config/Typography';
@@ -21,7 +21,7 @@ const Trending = () => {
   );
 };
 
-export default memo(Trending);
+export default Trending;
 
 const styles = StyleSheet.create({
   title: {

@@ -1,5 +1,5 @@
 import { View, StyleSheet, ImageBackground } from 'react-native';
-import React, { memo } from 'react';
+import React from 'react';
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
 import Instagram from '../../../../assets/images/Instagram.svg';
 
@@ -31,7 +31,7 @@ const Follow = () => {
   );
 };
 
-export default memo(Follow);
+export default Follow;
 
 const styles = StyleSheet.create({
   container: {

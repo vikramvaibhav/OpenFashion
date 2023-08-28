@@ -1,5 +1,5 @@
 import { Pressable, View } from 'react-native';
-import React, { memo } from 'react';
+import React from 'react';
 
 import styles from './FooterStyle';
 import { AppText, Divider } from '../../atoms';
@@ -52,4 +52,4 @@ const Footer = () => {
     );
 };
 
-export default memo(Footer);
+export default Footer;

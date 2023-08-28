@@ -1,5 +1,5 @@
 import { View, StyleSheet } from 'react-native';
-import React, { memo } from 'react';
+import React from 'react';
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
 
 import Logo from '../../../../assets/images/Logo.svg';
@@ -55,7 +55,7 @@ const About = () => {
   );
 };
 
-export default memo(About);
+export default About;
 
 const styles = StyleSheet.create({
   container: {

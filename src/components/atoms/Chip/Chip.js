@@ -1,8 +1,7 @@
 import { Pressable } from 'react-native';
-import React, { lazy, memo } from 'react';
+import React from 'react';
 import styles from './ChipStyle';
-
-const AppText = lazy(() => import('../AppText'));
+import AppText from '../AppText';
 
 const Chip = ({ labelStyle, style, onPress, label }) => {
     return (
@@ -12,4 +11,4 @@ const Chip = ({ labelStyle, style, onPress, label }) => {
     );
 };
 
-export default memo(Chip);
+export default Chip;

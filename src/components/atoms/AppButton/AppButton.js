@@ -1,8 +1,7 @@
 import { Pressable } from 'react-native';
-import React, { lazy, memo } from 'react';
+import React from 'react';
 import styles from './AppButtonStyle';
-
-const AppText = lazy(() => import('../AppText'));
+import AppText from '../AppText';
 
 const AppButton = ({ disabled = false, title, titleStyle, style, onPress }) => {
     return (
@@ -15,4 +14,4 @@ const AppButton = ({ disabled = false, title, titleStyle, style, onPress }) => {
     );
 };
 
-export default memo(AppButton);
+export default AppButton;

@@ -1,6 +1,6 @@
 import { FlatList, Image, StyleSheet, View } from 'react-native';
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
-import React, { memo } from 'react';
+import React from 'react';
 
 import colors from '../../../../config/Colors';
 import typography from '../../../../config/Typography';
@@ -34,7 +34,7 @@ const Recommendation = () => {
   );
 };
 
-export default memo(Recommendation);
+export default Recommendation;
 
 const styles = StyleSheet.create({
   sectionTitle: {

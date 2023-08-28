@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import { ImageBackground, StyleSheet, View } from 'react-native';
 
 
@@ -45,7 +45,7 @@ const Collection = () => {
   );
 };
 
-export default memo(Collection);
+export default Collection;
 
 const styles = StyleSheet.create({
   titleText: {

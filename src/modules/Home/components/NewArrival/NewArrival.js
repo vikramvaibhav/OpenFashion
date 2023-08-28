@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import { FlatList, StyleSheet, View } from 'react-native';
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
 
@@ -61,7 +61,7 @@ const NewArrival = () => {
   );
 };
 
-export default memo(NewArrival);
+export default NewArrival;
 
 const styles = StyleSheet.create({
   newArrivalTitleContainer: {
