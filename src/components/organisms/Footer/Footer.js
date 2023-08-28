@@ -1,4 +1,4 @@
-import { View } from 'react-native';
+import { Pressable, View } from 'react-native';
 import React, { memo } from 'react';
 
 import styles from './FooterStyle';
@@ -6,8 +6,10 @@ import { AppText, Divider } from '../../atoms';
 import Twitter from '../../../assets/icons/Twitter.svg';
 import Instagram from '../../../assets/icons/Instagram.svg';
 import YouTube from '../../../assets/icons/YouTube.svg';
+import { useNavigation } from '@react-navigation/native';
 
 const Footer = () => {
+    const { navigate } = useNavigation();
     return (
         <View>
             <View style={styles.container}>
@@ -37,9 +39,9 @@ const Footer = () => {
                 <View>
                     <AppText style={styles.contactInfoText}>Contact</AppText>
                 </View>
-                <View>
+                <Pressable onPress={() => navigate("BlogListScreen")}>
                     <AppText style={styles.contactInfoText}>Blog</AppText>
-                </View>
+                </Pressable>
             </View>
             <View style={styles.copyrightContainer}>
                 <AppText style={styles.copyrightInfoText}>

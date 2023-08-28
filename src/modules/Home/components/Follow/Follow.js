@@ -1,6 +1,6 @@
 import { View, StyleSheet, ImageBackground } from 'react-native';
 import React, { memo } from 'react';
-import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen';
+import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
 import Instagram from '../../../../assets/images/Instagram.svg';
 
 import typography from '../../../../config/Typography';
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
   },
   instagramImage: {
-    height: hp(41),
+    height: wp(41),
     width: wp(41),
     justifyContent: 'flex-end',
     marginHorizontal: wp(3),

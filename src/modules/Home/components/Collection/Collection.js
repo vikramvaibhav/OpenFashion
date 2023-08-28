@@ -5,7 +5,7 @@ import { ImageBackground, StyleSheet, View } from 'react-native';
 import colors from '../../../../config/Colors';
 import typography from '../../../../config/Typography';
 import { AppText, ScreenTitle } from '../../../../components/atoms';
-import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen';
+import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
 
 const Collection = () => {
   return (
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
   },
   collectionBanner: {
-    height: hp(60),
+    height: wp(60),
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     marginVertical: wp(10),
   },
   autumnBanner: {
-    height: hp(74),
+    height: wp(74),
     width: wp(65),
     justifyContent: 'flex-start',
   },
