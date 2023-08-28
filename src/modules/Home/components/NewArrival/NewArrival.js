@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { FlatList, StyleSheet, View } from 'react-native';
-import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen';
+import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
 
 import About from '../About';
 import Banner from '../Banner';
@@ -30,7 +30,6 @@ const NewArrival = () => {
           </ScreenTitle>
         </>
       }
-      style={styles.newArrivalContainer}
       data={newArrival}
       renderItem={data => (
         <NewArrivalCard
@@ -71,9 +70,6 @@ const styles = StyleSheet.create({
   newArrivalTitle: {
     ...typography.title,
     textTransform: 'uppercase',
-  },
-  newArrivalContainer: {
-    marginVertical: wp(2.5),
   },
   exploreButton: {
     backgroundColor: colors.offWhite,

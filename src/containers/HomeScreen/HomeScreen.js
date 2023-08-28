@@ -1,16 +1,14 @@
 import React, { memo } from 'react';
 
-import { Header } from '../../components/organisms';
 import { Screen } from '../../components/atoms';
 import { NewArrival } from '../../modules/Home';
-
+import { Text, View } from 'react-native';
 
 const HomeScreen = () => {
     return (
-        <Screen>
-            <Header />
-            <NewArrival />
-        </Screen>
+        <View>
+            <Text>HomeScreen</Text>
+        </View>
     );
 };
 

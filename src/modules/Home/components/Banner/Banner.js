@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { ImageBackground, StyleSheet, View } from 'react-native';
-import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
 
 import typography from '../../../../config/Typography';
 import { AppButton, AppText } from '../../../../components/atoms';
@@ -29,7 +29,7 @@ export default memo(Banner);
 
 const styles = StyleSheet.create({
   backgroundImage: {
-    height: hp(150),
+    height: wp(150),
     justifyContent: 'space-between',
     alignItems: 'center',
   },
